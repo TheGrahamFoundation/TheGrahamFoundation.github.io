@@ -1,2 +1,5 @@
-# TheGrahamFoundation.github.io
-The collective of all Open Source Projects that David Labs has built and few other forks from the Internet which we believe should exists.
+# The Graham Foundation
+
+Public website for The Graham Foundation, an independent open-research initiative.
+
+Visit: [thegrahamfoundation.github.io](https://thegrahamfoundation.github.io)

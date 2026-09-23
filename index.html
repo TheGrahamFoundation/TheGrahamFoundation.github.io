@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="The Graham Foundation is an independent open-research initiative for ideas that deserve public scrutiny, reproducible evidence, and a life beyond their inventors.">
+  <meta name="theme-color" content="#07090d">
+  <title>The Graham Foundation — Open Research</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090d'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%23d8ff62' stroke-width='3'/%3E%3Cpath d='M20 20h24v7H28v10h13v7H20z' fill='%23f5f7ee'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="nav">
+    <a class="identity" href="#top" aria-label="The Graham Foundation home"><span class="mark">GF</span><span>The Graham Foundation</span></a>
+    <nav aria-label="Primary navigation"><a href="#mission">Mission</a><a href="#research">Research</a><a href="#principles">Principles</a><a href="https://github.com/TheGrahamFoundation">GitHub ↗</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> Independent open research</p>
+        <h1 id="hero-title">Ideas should survive their inventors.</h1>
+        <p class="lede">The Graham Foundation gives difficult, useful ideas a public record: a definition, a test, the evidence, and the freedom to fail honestly.</p>
+        <div class="hero-actions"><a class="button primary" href="#research">Enter the research field</a><a class="button secondary" href="https://github.com/TheGrahamFoundation">Inspect the work</a></div>
+      </div>
+      <div class="field" aria-label="Interactive map of active research">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="core"><span class="core-label">PUBLIC<br>KNOWLEDGE</span></div>
+        <button class="node node-morse active" data-project="morse" aria-label="Show Morse/36 research"><span>M/36</span><small>Protocol</small></button>
+        <button class="node node-phantom" data-project="phantom" aria-label="Show Phantom research"><span>φ</span><small>Engine</small></button>
+        <button class="node node-open" data-project="open" aria-label="Show the open research invitation"><span>?</span><small>Open call</small></button>
+        <div class="signal s1"></div><div class="signal s2"></div><div class="signal s3"></div>
+      </div>
+    </section>
+
+    <section class="mission" id="mission">
+      <div class="section-index">01 / MISSION</div>
+      <div class="mission-copy"><h2>We exist to move an idea from conviction to evidence.</h2><p>The Graham Foundation is an independent research initiative. We define emerging questions, build open test beds, publish what happened, and preserve the path from hypothesis to result.</p><p>We do not ask whether an idea sounds conventional. We ask whether it can be stated precisely, challenged publicly, and tested repeatedly.</p></div>
+      <blockquote><span>Our mission</span>Build a durable public home for experimental technology, where claims remain inspectable and failure remains evidence.</blockquote>
+    </section>
+
+    <section class="research" id="research">
+      <div class="section-heading"><div class="section-index">02 / ACTIVE RESEARCH</div><p>Select a body of work to inspect its central question.</p></div>
+      <div class="research-console">
+        <div class="project-tabs" role="tablist" aria-label="Research projects">
+          <button class="project-tab active" role="tab" aria-selected="true" data-project="morse">Morse/36 <span>PUBLIC</span></button>
+          <button class="project-tab" role="tab" aria-selected="false" data-project="phantom">Phantom <span>PUBLIC</span></button>
+          <button class="project-tab" role="tab" aria-selected="false" data-project="open">Open call <span>ONGOING</span></button>
+        </div>
+        <article class="project-panel" id="project-panel" aria-live="polite">
+          <div class="project-meta"><span id="project-code">M/36 — PROTOCOL RESEARCH</span><span id="project-status">v0.1 DRAFT</span></div>
+          <h3 id="project-title">Can agents communicate in 36 characters?</h3>
+          <p id="project-description">Morse/36 investigates whether agents sharing a deterministic registry can exchange compact, auditable instructions instead of repeatedly transmitting verbose task payloads.</p>
+          <div class="project-question"><span>THE TEST</span><p id="project-question">Measure semantic accuracy, wire cost, latency, registry drift, replay resistance, and failure recovery against JSON and binary baselines.</p></div>
+          <a id="project-link" class="text-link" href="https://github.com/TheGrahamFoundation/Morse-36">Open the repository <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="principles" id="principles">
+      <div class="section-heading"><div class="section-index">03 / OPERATING PRINCIPLES</div><h2>The work is public. The standard is evidence.</h2></div>
+      <div class="principle-grid">
+        <article><span>01</span><h3>Atomic claims</h3><p>State one claim clearly enough that it can be tested, disproved, or revised without moving the goalposts.</p></article>
+        <article><span>02</span><h3>Open inspection</h3><p>Publish definitions, assumptions, methods, test vectors, and negative results alongside the conclusion.</p></article>
+        <article><span>03</span><h3>Independent inquiry</h3><p>Research direction is not subordinate to a product roadmap, popularity contest, or commercial deadline.</p></article>
+        <article><span>04</span><h3>Reproducible proof</h3><p>A result becomes useful when another person can inspect the record and attempt the same test.</p></article>
+      </div>
+    </section>
+
+    <section class="governance">
+      <div class="section-index">04 / INDEPENDENCE</div>
+      <div><h2>Built in public. Governed through the record.</h2><p>The Graham Foundation operates independently as an open-research initiative. Collaborators may contribute ideas, code, infrastructure, or criticism. No contribution purchases control over a finding.</p></div>
+      <div class="rules"><p><span>Research</span> Public by default</p><p><span>Changes</span> Reviewed through Git</p><p><span>Claims</span> Evidence attached</p><p><span>Failures</span> Preserved, not erased</p></div>
+    </section>
+
+    <section class="invitation"><p class="eyebrow">A standing invitation</p><h2>Bring a question worth testing.</h2><p>You do not need permission to inspect the work. Open an issue, challenge an assumption, reproduce an experiment, or propose a better frame.</p><a class="button primary" href="https://github.com/TheGrahamFoundation">Contribute on GitHub</a></section>
+  </main>
+
+  <footer><div><span class="mark">GF</span><span>The Graham Foundation</span></div><p>Independent open research · Established 2026</p><a href="https://github.com/TheGrahamFoundation">github.com/TheGrahamFoundation</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
